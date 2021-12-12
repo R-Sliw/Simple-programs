@@ -8,7 +8,6 @@ function palindrome(str) {
     .reverse()
     .join("");
 
-return (bigLetters === reverseWord) ? true : false;
-
+  return (bigLetters === reverseWord) ? true : false;
 }
 palindrome("race car");
