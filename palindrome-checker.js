@@ -1,14 +1,10 @@
 function palindrome(str) {
-  let bigLetters = str
-    .toUpperCase()
-    .replace(/[^a-zA-Z1-9]/g, "");
+  let bigLetters = str.toUpperCase().replace(/[^a-zA-Z1-9]/g, "");
 
-  let reverseWord = bigLetters
-    .split("")
-    .reverse()
-    .join("");
+  let reverseWord = bigLetters.split("").reverse().join("");
 
-return (bigLetters === reverseWord) ? true : false;
-
+  return bigLetters === reverseWord ? true : false;
 }
 palindrome("race car");
+
+console.log(palindrome("race car"));
